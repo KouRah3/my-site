@@ -68,17 +68,9 @@ const Home = () => {
                 <h3 className="text-lg text-[#181717] tracking-wide !text-[18px] mb-6">{project.title}</h3>
                 <p className="text-lg text-[#181717] text-base leading-relaxed !text-[18px] mb-6">{project.description}</p>
                 <p className=" text-[#888888] text-ms mb-8">{project.extraInfo}</p>
-                <Link
-                  to={project.link}
-                  className="group relative inline-flex items-center text-[#181717] text-lg font-medium mt-[9vw]"
-                >
-                  <span className="bg-gradient-to-r from-[#646B8C] to-[#646B8C] bg-no-repeat bg-[length:100%_1px] bg-bottom transition-all duration-200 group-hover:bg-[length:0%_1px]">
-                    {project.linkText}
-                  </span>
-                  <svg
-                    viewBox="0 0 13 20"
-                    className="ml-1 w-[13px] h-[20px] stroke-[#646B8C] fill-none stroke-[1px] stroke-dasharray-[7.95_30] stroke-dashoffset-[46] group-hover:stroke-dashoffset-[26] transition-all duration-300 delay-200 ease-[cubic-bezier(0.3,1.5,0.5,1)]"
-                  >
+                <Link to={project.link} className="link-underline mt-[9vw]">
+                  <span>{project.linkText}</span>
+                  <svg viewBox="0 0 13 20">
                     <polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" />
                   </svg>
                 </Link>
