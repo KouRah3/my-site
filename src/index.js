@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom"; // ✅ 引入 BrowserRouter
+import { HashRouter } from "react-router-dom"; // 🚀 用 HashRouter
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -8,9 +8,9 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>  {/* 🔥 用 BrowserRouter 包裹 App */}
+    <HashRouter>  {/* 🔥 用 HashRouter 包裹 App */}
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 

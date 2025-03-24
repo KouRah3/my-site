@@ -35,7 +35,7 @@ const About = () => {
           </div>
           <div className="md:w-1/2 flex justify-end">
             {/* 确保图片路径正确 */}
-            <img src="/images/Jiang.jpg" alt="Jiang" className="w-[25vw] h-[35vw] object-cover mt-5" />
+            <img src={process.env.PUBLIC_URL + "/images/Jiang.jpg"} alt="Jiang" className="w-[25vw] h-[35vw] object-cover mt-5" />
           </div>
         </section>
 

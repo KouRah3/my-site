@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Home from "./Home";
 import About from "./About";
@@ -8,19 +8,18 @@ import Project3 from "./pages/Project3";
 import Loader from "./components/Loader"; // 🔥 引入 Loader 组件
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const location = useLocation(); // ✅ 现在 `useLocation()` 在 Router 内部了
 
   useEffect(() => {
-    setLoading(true); // ✅ 进入新页面时显示 Loader
-    const timer = setTimeout(() => setLoading(false), 1000);
+    setLoading(true);
+    const timer = setTimeout(() => setLoading(false), 800); // ⏳ 设置 800ms 后隐藏 Loader
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
   return (
     <div>
-      {loading && <Loader />} {/* 🔥 页面切换时显示 Loader */}
-      {!loading && (
+      {loading ? <Loader /> : (  // 🔥 修复 Loader 不消失的问题
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

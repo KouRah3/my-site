@@ -18,21 +18,21 @@ const Project1 = () => {
       {/* 项目展示部分 */}
       <section className="max-w-[1400px] mx-auto mt-20 flex flex-col md:flex-row items-start justify-between">
         <div className="md:w-1/2">
-          <img src="/images/project1-1.png" alt="Project 1" className="w-full h-auto object-cover " />
+          <img src={process.env.PUBLIC_URL +"/images/project1-1.png"} alt="Project 1" className="w-full h-auto object-cover " />
         </div>
         <div className="md:w-1/2">
-          <h2 className="text-4xl font-bold">Introduction</h2>
+          <h2 className="text-4xl font-bold"></h2>
           <p className="text-lg text-[#606060] mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          
           </p>
         </div>
       </section>
 
       {/* 介绍部分 */}
       <section className="max-w-[1400px] mx-auto mt-16">
-        <h3 className="text-2xl font-bold mb-4">Introduction</h3>
+        <h3 className="text-2xl font-bold mb-4"></h3>
         <p className="text-lg text-[#606060]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          
         </p>
       </section>
 
@@ -40,18 +40,18 @@ const Project1 = () => {
       <section className="max-w-[1400px] mx-auto mt-16">
         <h3 className="text-2xl font-bold mb-4">My Role</h3>
         <p className="text-lg text-[#606060]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          
         </p>
       </section>
 
       {/* 设计过程部分 */}
       <section className="max-w-[1400px] mx-auto mt-16">
-        <h3 className="text-2xl font-bold mb-4">Design Process</h3>
+        <h3 className="text-2xl font-bold mb-4"></h3>
         <ul className="list-disc list-inside text-lg text-[#606060]">
-          <li>Lorem ipsum</li>
-          <li>Dolor sit amet</li>
-          <li>Lorem ipsum</li>
-          <li>Dolor sit amet</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </section>
 
@@ -63,9 +63,9 @@ const Project1 = () => {
               <img src="/images/project1-1.png" alt={`Project 1 - ${index}`} className="w-full h-auto object-cover border border-gray-300" />
             </div>
             <div className="md:w-1/2">
-              <h3 className="text-2xl font-bold mb-4">My Role</h3>
+              <h3 className="text-2xl font-bold mb-4"></h3>
               <p className="text-lg text-[#606060]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               
               </p>
             </div>
           </div>
@@ -76,9 +76,9 @@ const Project1 = () => {
       <footer className="max-w-[1400px] mx-auto mt-24 py-6 text-sm flex justify-between">
         <p className="text-[#181717]">Lan Jiang コウラン — 2025</p>
         <nav className="space-x-6">
-          <a href="#" className="hover:underline">Artstation</a>
-          <a href="#" className="hover:underline">LinkedIn</a>
-          <a href="#" className="hover:underline">Twitter</a>
+          <a href="#" className="hover:underline"></a>
+          <a href="#" className="hover:underline"></a>
+          <a href="#" className="hover:underline"></a>
         </nav>
       </footer>
     </div>
