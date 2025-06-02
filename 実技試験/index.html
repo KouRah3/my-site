@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>簡易掲示板プログラム</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>メッセージ投稿</h1>
+      <form>
+        <p><label for="name">名前：</label><input type="text" name="name" id="name"></p>
+        <textarea id="message"></textarea></p>
+        <button type="button" id="btn_send" class="btn">投稿する</button>
+      </form>
+    </section>
+    <section>
+      <h1>メッセージ一覧</h1>
+      <ul id="msg_list">
+        <!-- ここにメッセージを一覧表示 -->
+      </ul>
+    </section>
+  </main>
+
+  <div class="dlg-wrap">
+    <div id="dlg">
+      <div id="dlg_btn_close">×</div>
+      <p id="dlg_message"></p>
+      <div id="dlg_detail"></div>
+    </div>
+  </div>
+
+</body>
+</html>
